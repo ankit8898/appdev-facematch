@@ -1,3 +1,7 @@
 Ready to play!
 
 <img src="/images/Ankit.jpg" width="200" height="300"/>
+
+<% @names.each do |n| %>
+<%= link_to n.name, play_path(:id => n.id) %>
+<%end %>
